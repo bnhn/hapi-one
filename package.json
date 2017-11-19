@@ -1,7 +1,7 @@
 {
   "name": "getting-started-with-hapi-js-part-1",
   "version": "1.0.0",
-  "description": "Getting started with Hapi.js -- Part 1",
+  "description": "Getting started with Hapi.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,0 +1,12 @@
+module.exports = {
+  key: 'your key here'
+  knex: {
+    host: '127.0.0.1',
+
+        user: 'dbuser',
+        password: 'dbpassword',
+
+        database: 'dbname',
+        charset: 'utf8',
+  }
+}

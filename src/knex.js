@@ -1,14 +1,16 @@
-const Knex =  require('knex')({
+const CREDS = require('../CREDS')
+
+const Knex = require('knex')({
   client: 'mysql',
   connection: {
 
-    host: '127.0.0.1',
+    host: CREDS.knex.host,
 
-    user: 'birdbase',
-    password: 'password',
+    user: CREDS.knex.user,
+    password: CREDS.knex.password,
 
-    database: 'birdbase',
-    charset: 'utf8',
+    database: CREDS.knex.database,
+    charset: CREDS.knex.charset,
   }
 })
 

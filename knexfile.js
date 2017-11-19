@@ -1,3 +1,5 @@
+const CREDS = require('./CREDS')
+
 module.exports = {
 
   development: {
@@ -8,13 +10,13 @@ module.exports = {
     client: 'mysql',
     connection: {
 
-      host: '127.0.0.1',
+      host: CREDS.knex.host,
 
-      user: 'birdbase',
-      password: 'password',
+      user: CREDS.knex.user,
+      password: CREDS.knex.password,
 
-      database: 'birdbase',
-      charset: 'utf8',
+      database: CREDS.knex.database,
+      charset: CREDS.knex.charset,
 
     }
 
